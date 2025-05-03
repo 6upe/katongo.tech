@@ -9,6 +9,13 @@
 <!-- Favicon -->
 <link rel="shortcut icon" href="{{ asset('logos/6upe-logo-white.png') }}" type="image/x-icon">
 
+<!-- Open Graph / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ $og_url ?? request()->url() }}">
+<meta property="og:title" content="{{ $og_title ?? 'Bupe Katongo | Software Developer | Designer | Consultant' }}">
+<meta property="og:description" content="{{ $og_description ?? 'Hi, I\'m Bupe Katongo – a Software Developer, Graphic Designer, and IT Consultant passionate about delivering smart, scalable digital solutions.' }}">
+<meta property="og:image" content="{{ $og_image ?? asset('logos/6upe-logo-white.png') }}">
+
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ $og_url ?? request()->url() }}">
